@@ -1,0 +1,1 @@
+{"name":"Local: J01005","url":"d:\\LAP_TRINH\\OOP\\J01005.java","tests":[{"id":1786494819365,"input":"2\n2 3","output":""},{"id":1786494843225,"input":"2\n3 2\n2 100000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LAP_TRINH\\OOP\\J01005.java","group":"local","local":true}
