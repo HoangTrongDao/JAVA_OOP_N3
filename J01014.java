@@ -7,7 +7,7 @@ public class J01014 {
         int t = sc.nextInt();
 
         while (t-- > 0) {
-            long n = sc.nextLong();
+            long n = sc.nextLong(); 
             long max = 0;
 
             for (long i = 2; i <= n / i; i++) {

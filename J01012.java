@@ -5,7 +5,7 @@ public class J01012 {
         long t = sc.nextLong();
         while(t-->0){
             long n= sc.nextLong();
-            long cnt = 0;
+            long cnt = 0;   
             for(long i=1;i*i<=n;i++){
                 if(n%i==0){
                     if(i%2==0){
