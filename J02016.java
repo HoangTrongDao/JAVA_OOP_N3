@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class J02016 {
-    static boolean checkPytago(long[] a, int n) {
+    static boolean checkPytago(long[] a, int n) {   
         for (int i = 0; i < n; i++) {
             a[i] = a[i] * a[i];
         } 
