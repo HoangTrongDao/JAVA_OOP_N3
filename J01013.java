@@ -1,30 +1,45 @@
+import java.util.*;
 
-import java.util.Scanner;
 public class J01013 {
 
-    static long[] f = new long[2000001];
-    
+    static final int MAX = 2000000;
+    static long[] f = new long[MAX + 1];
+    static int[] spf = new int[MAX + 1];
+
     public static void main(String[] args) {
-        for(int i=0;i<2000001;i++){
-            f[i]=0;
-            Boolean oke=true;
-            for(int j=2;j<=(int)Math.sqrt(i);j++){
-                if(i%j==0){
-                    f[i]=f[j]+f[i/j];
-                    oke=false;
-                    break;
+
+        for (int i = 2; i <= MAX; i++) {
+            if (spf[i] == 0) { 
+                spf[i] = i;
+
+                if ((long) i * i <= MAX) {
+                    for (int j = i * i; j <= MAX; j += i) {
+                        if (spf[j] == 0) {
+                            spf[j] = i;
+                        }
+                    }
                 }
             }
-            if(oke) f[i]=i;
         }
+        f[1] = 0;
+
+        for (int i = 2; i <= MAX; i++) {
+            f[i] = f[i / spf[i]] + spf[i];
+        }
+
         Scanner sc = new Scanner(System.in);
-        long t = sc.nextLong();
-        long s=0;
-        for (long i = 0; i < t; i++) {
-            int a=sc.nextInt();
-            s+=f[a];
+
+        int t = sc.nextInt();
+
+        long sum = 0;
+
+        while (t-- > 0) {
+            int a = sc.nextInt();
+            sum += f[a];
         }
-        System.out.print(s);
+
+        System.out.println(sum);
+
         sc.close();
     }
 }
