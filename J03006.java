@@ -17,7 +17,7 @@ public class J03006{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        sc.nextLine();
+        sc.nextLine();x
         while(t-->0){
             String s = sc.nextLine().trim();
             if (chan(s) && laThuanNghich(s)){

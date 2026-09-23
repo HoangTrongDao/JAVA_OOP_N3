@@ -38,22 +38,16 @@ public class J02024 {
             for (int i = 0; i < n; i++) {
                 a[i] = sc.nextInt();
             }
-
-            // Sắp xếp giảm dần
             Arrays.sort(a);
-
             for (int i = 0; i < n / 2; i++) {
                 int tmp = a[i];
                 a[i] = a[n - 1 - i];
                 a[n - 1 - i] = tmp;
             }
-
             b = new ArrayList<>();
             ans = new ArrayList<>();
 
             Try(0, 0);
-
-            // Sắp xếp các dãy con theo thứ tự từ điển tăng dần
             Collections.sort(ans, new Comparator<ArrayList<Integer>>() {
                 public int compare(ArrayList<Integer> x, ArrayList<Integer> y) {
 
@@ -68,8 +62,6 @@ public class J02024 {
                     return Integer.compare(x.size(), y.size());
                 }
             });
-
-            // In kết quả
             for (ArrayList<Integer> x : ans) {
                 for (int i = 0; i < x.size(); i++) {
                     System.out.print(x.get(i) + " ");
