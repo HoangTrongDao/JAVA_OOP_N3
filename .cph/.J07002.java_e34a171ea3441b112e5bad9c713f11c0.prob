@@ -1,0 +1,1 @@
+{"name":"Local: J07002","url":"d:\\LAP_TRINH\\OOP\\J07002.java","tests":[{"id":1790388301317,"input":"12 3 4 5 6 7\n\n\nAaa 1 1 Bbb XXX yyy 5 5\n\n\n999999999999999999999999\n\n\n9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LAP_TRINH\\OOP\\J07002.java","group":"local","local":true}
