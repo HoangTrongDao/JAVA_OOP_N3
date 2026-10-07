@@ -24,6 +24,6 @@ public class bai2{
                 dem++;
             }
         }
-        System.out.println(dem);
+        System.out.println(dem) ;
     }
 }
