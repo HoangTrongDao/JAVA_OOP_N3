@@ -21,6 +21,7 @@ class Point {
     public double getY() {
         return y;
     }
+    
     // Tính khoảng cách giữa 2 điểm
     public double distance(Point p) {
         return Math.sqrt(
