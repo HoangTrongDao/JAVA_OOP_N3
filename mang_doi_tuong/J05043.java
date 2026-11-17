@@ -31,7 +31,7 @@ class NV{
     } else {
         return 100;
     }
-}
+}   
     public long tamung(){
         double tam = (phucap() + luongchinh()) * 2.0 / 3.0;
         if (tam < 25000) {
